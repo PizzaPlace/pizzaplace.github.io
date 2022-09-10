@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+{% seo %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+
+    <header class="page-header" role="banner">
+      <div>
+        <img class="project-name" src="{{ "/assets/images/pizzaplace.png" | prepend: site.baseurl }}">
+        <a class="project-name" href="/">PizzaPlace</a>
+      </div>
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      <a href="/invite" class="btn">Add PizzaPlace to your server</a>
+      <a href="https://i.norden.wtf/pizzaplace" class="btn">Join our Discord</a>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+
+      <footer class="site-footer">
+        <span class="site-footer-owner">Wanna stay updated? <a href="https://i.norden.wtf/pizzaplace">Follow the development progress on Discord</a>.</span>
+        <span class="site-footer-credits">This page was developed by <a href="https://codeize.me">Codeize</a>, it's powered by GitHub Pages.</span>
+      </footer>
+    </main>
+  </body>
+</html>
